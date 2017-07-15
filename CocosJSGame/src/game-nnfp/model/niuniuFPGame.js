@@ -26,12 +26,12 @@ var NiuniuFPGame = cc.Class.extend({
 
     reset: function () {
         this.bFirstTimes = false;//首次叫庄
-        this.callBanker = INVALID_CHAIR;
-        this.banker = INVALID_CHAIR;
+        this.callBanker = 0XFFFF;
+        this.banker = 0XFFFF;
         this.turnMaxScore = 0;
 
         //this.cellScore = 0; 			//底分
-        this.ctrlFlag = INVALID_BYTE;   //叫分标志
+        this.ctrlFlag = 0XFFFF;   //叫分标志
         this.androidMinCellScore = 0;		//机器人可设置的最小底注
         this.androidMaxCellScore = 0;		//机器人可设置的最大底注
         this.maxScoreTimes = 0;			//最大倍数

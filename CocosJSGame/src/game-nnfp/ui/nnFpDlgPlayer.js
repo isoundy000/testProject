@@ -177,7 +177,7 @@ var NnFpDlgPlayer = DlgBase.extend({
         var player = new Player();
         player.setNickName("牛一");
         player.setMoney(100001);
-        player.setStatus(US_SIT);
+        player.setStatus(0x02);
         player.setGender(0);
 
         for (var i = 0; i < 6; i++) {

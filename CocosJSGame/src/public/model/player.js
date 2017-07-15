@@ -4,11 +4,11 @@ var Player = cc.Class.extend({
     },
     
     reset: function(){
-    	this.userId = INVALID_USERID;
+    	this.userId = 0XFFFF;
     	this.gameId = -1;
-    	this.tableID = INVALID_TABLE;
-    	this.chairID = INVALID_CHAIR;
-    	this.roomID = INVALID_TABLE;
+    	this.tableID = 0XFFFF;
+    	this.chairID = 0XFFFF;
+    	this.roomID = 0XFFFF;
     	this.account = "";
     	this.md5Pass = "";
     	this.nickName = "";
@@ -407,7 +407,7 @@ var Player = cc.Class.extend({
     },
     //积分
     emitChangeScore: function(data){
-    	if(this.userId == INVALID_USERID){
+    	if(this.userId == 0xffff){
     		return;
     	}
 
@@ -418,7 +418,7 @@ var Player = cc.Class.extend({
     },
 
     addListenerChangeScore: function(cb){
-    	if(this.userId == INVALID_USERID){
+    	if(this.userId == 0xffff){
     		return;
     	}
 
@@ -434,7 +434,7 @@ var Player = cc.Class.extend({
     },  
     //金币
     emitChangeMoney: function(data){
-    	if(this.userId == INVALID_USERID){
+    	if(this.userId == 0xffff){
     		return;
     	}
     	
@@ -445,7 +445,7 @@ var Player = cc.Class.extend({
     },
     
     addListenerChangeMoney: function(cb){
-    	if(this.userId == INVALID_USERID){
+    	if(this.userId == 0xffff){
     		return;
     	}
     	

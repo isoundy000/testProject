@@ -27,7 +27,7 @@ var Hero = Player.extend({
     },
     getLockInfo: function(){
     	return this.lockInfo;
-    },
+    }
 });
 
 var g_objHero = new Hero();

@@ -4,7 +4,7 @@
   "description": "HelloJavascript",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/res/icon.png"
+    "128": ""
   },
   "developer": {
     "name": "Cocos2d-html5",

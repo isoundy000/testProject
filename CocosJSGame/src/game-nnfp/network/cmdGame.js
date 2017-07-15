@@ -6,10 +6,10 @@ var CMD_NIUNIU_TB = {
 		GAME_NAME:						"通比牛牛",								//游戏名字
 		MAXCOUNT:						5,										//扑克最大数目
 	
-		VERSION_SERVER:					PROCESS_VERSION(1,0,0),					//程序版本
-		VERSION_CLIENT:					PROCESS_VERSION(1,0,0),					//程序版本
+		VERSION_SERVER:					1,					//程序版本
+		VERSION_CLIENT:					1,					//程序版本
 
-		GAME_GENRE:						(GAME_GENRE_GOLD|GAME_GENRE_MATCH),		//游戏类型
+		GAME_GENRE:						(1|2),		//游戏类型
 		
 		//结束原因
 		GER_NO_PLAYER:					0x10,									//没有玩家
@@ -17,10 +17,10 @@ var CMD_NIUNIU_TB = {
 		SERVER_LEN:						32,										//房间名称长度 
 
 		//游戏状态
-		GS_TK_FREE:						GAME_STATUS_FREE,                       //等待开始
-		GS_TK_CALL:						GAME_STATUS_PLAY,						//叫庄状态
-		GS_TK_SCORE:					GAME_STATUS_PLAY+1,						//下注状态
-		GS_TK_PLAYING:					GAME_STATUS_PLAY+2,						//游戏进行
+		GS_TK_FREE:						100,                       //等待开始
+		GS_TK_CALL:						101,						//叫庄状态
+		GS_TK_SCORE:					101+1,						//下注状态
+		GS_TK_PLAYING:					101+2,						//游戏进行
 		
 		//服务器命令结构
 		SUB_S_GAME_START:				100,									//游戏开始

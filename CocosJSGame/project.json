@@ -12,13 +12,8 @@
 
     "jsList" : [
         "src/resource.js",
-        "src/app.js",
 
         "src/libs/MyUtil.js",
-
-        "src/public/config/platform.js",
-
-        "src/public/consts/define.js",
 
         "src/public/manager/UIMgr.js",
         "src/public/manager/sceneUIMgr.js",

@@ -1,7 +1,4 @@
 var res = {
-    HelloWorld_png : "res/HelloWorld.png",
-    CloseNormal_png : "res/CloseNormal.png",
-    CloseSelected_png : "res/CloseSelected.png",
     dlgNnFpScene_json : "res/game_nnfp/dlgNnFpScene.json",
     nnFpAnimationPlist_plist: "res/game_nnfp/nnFpAnimationPlist.plist",
     dlgNnFpPlayer_json: "res/game_nnfp/dlgNnFpPlayer.json",

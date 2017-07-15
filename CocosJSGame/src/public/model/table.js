@@ -16,11 +16,11 @@ var Table = cc.Class.extend({
 
     reset: function () {
         //游戏状态
-        this.gameStatus = GAME_STATUS_FREE;
+        this.gameStatus = 100;
         //旁观
         this.bAllowLookon = false;
 
-        this.tableID = INVALID_TABLE;
+        this.tableID = 0XFFFF;
         this.baseScore = 1;
         this.minScore = 0;
         this.maxScore = 0;

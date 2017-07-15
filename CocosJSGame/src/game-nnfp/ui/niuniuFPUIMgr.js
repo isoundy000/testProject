@@ -149,13 +149,13 @@ var NiuniuFPUIMgr = GameUIMgr.extend({
         }
 
         //准备界面
-        if (g_objHero.getStatus() >= US_READY) {
+        if (g_objHero.getStatus() >= 0x03) {
             this.closeTimer("ready");
             UIMgr.getInstance().closeDlg(ID_NnTbDlgCallScore);
             UIMgr.getInstance().closeDlg(ID_NnFpDlgReady);
         }
 
-        if (g_objHero.getStatus() >= US_SIT) {
+        if (g_objHero.getStatus() >= 0x02) {
             var dlgSystem = UIMgr.getInstance().getDlg(ID_NnFpDlgSystem);
             if (dlgSystem) {
                 dlgSystem.updateDlg();
